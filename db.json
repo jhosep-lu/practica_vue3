@@ -1,0 +1,36 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Electrónicos"
+    },
+    {
+      "id": 2,
+      "nombre": "Ropa"
+    },
+    {
+      "nombre": "OTROS",
+      "id": 3
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Smartphone",
+      "precio": 200,
+      "categoriaId": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Camiseta",
+      "precio": 20,
+      "categoriaId": 2
+    },
+    {
+      "nombre": "NUEVO PRODUCTO EDITADO",
+      "precio": 123,
+      "categoriaId": 2,
+      "id": 3
+    }
+  ]
+}
