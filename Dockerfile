@@ -1,15 +1,20 @@
-FROM node:18
+# Imagen base
+FROM node:14.17-alpine
 
+# Crear directorio de trabajo
 WORKDIR /app
 
-COPY package*.json ./
-
-RUN npm install
-
+# Copiar los archivos del proyecto
 COPY . .
 
+# Instalar dependencias
+RUN npm install
+
+# Compilar el proyecto
 RUN npm run build
 
-FROM nginx:1.21
+# Exponer el puerto del servidor web
+EXPOSE 9090
 
-COPY --from=0 /app/dist /usr/share/nginx/html
+# Comando para iniciar el servidor web
+CMD ["npm", "run", "serve"]
