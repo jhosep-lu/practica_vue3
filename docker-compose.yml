@@ -1,7 +1,8 @@
-version: '3'
+version: "3.9"
 
 services:
   frontend:
-    build: /root/laboratoria4/practica_vue3
+    build: .
     ports:
-      - '8080:80'
+      - "9090:9090"
+    restart: always
