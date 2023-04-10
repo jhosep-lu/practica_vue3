@@ -10,5 +10,10 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+
+  // despliegue modicado por eso
+  server: {
+    host: '0.0.0.0'
   }
 })
