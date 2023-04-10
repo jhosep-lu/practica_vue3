@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  frontend:
+    build: /root/laboratoria4/practica_vue3
+    ports:
+      - '8080:80'
